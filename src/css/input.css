@@ -1,0 +1,3 @@
+@tailwind base; //Pre-fly: reset semua style default
+@tailwind components;
+@tailwind utilities;
