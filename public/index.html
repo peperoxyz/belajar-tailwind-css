@@ -9,38 +9,7 @@
   </head>
   <body>
     <div class="grid place-items-center">
-      <h1 class="text-center text-2xl font-bold text-blue-900 m-5">Click Counter</h1>
-      <button id="button" class="bg-pink-300 m-5 p-2 hover:bg-pink-500 rounded hover:text-white hover:shadow-lg">Click Me!</button>
-      <h2 class="text-2xl m-5">You have clicked the button <span id="count"> </span> times!</h2>
-      <button id="clear" class="bg-blue-300 m-5 p-2 hover:bg-blue-500 rounded hover:text-white hover:shadow-lg">Reset Counter</button>
+      <h1 class="text-center text-2xl font-bold text-blue-900 m-16 bg-blue-400 hover:bg-pink-400 hover:text-pink-900 p-3">Dea's Portfolio Page</h1>
     </div>
-
-    <script>
-      const cacheKey = "NUMBER";
-      if (typeof Storage !== "undefined") {
-        // pengecekkan apakah data sessionStorage dengan key NUMBER tersedia atau belum
-        if (localStorage.getItem(cacheKey) === "undefined") {
-          // Jika belum maka akan atur dengan nilai awal yakni 0
-          localStorage.setItem(cacheKey, 0);
-        }
-
-        const button = document.querySelector("#button");
-        const clearButton = document.querySelector("#clear");
-        const count = document.querySelector("#count");
-        button.addEventListener("click", function (event) {
-          let number = localStorage.getItem(cacheKey);
-          number++;
-          localStorage.setItem(cacheKey, number);
-          count.innerText = localStorage.getItem(cacheKey);
-        });
-
-        clearButton.addEventListener("click", function (event) {
-          localStorage.removeItem(cacheKey);
-          count.innerText = ('0');
-        });
-      } else {
-        alert("Browser tidak mendukung Web Storage");
-      }
-    </script>
   </body>
 </html>

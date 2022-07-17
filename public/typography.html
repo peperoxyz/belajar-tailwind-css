@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet" />
+    <title>Belajar Tailwind</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+              poppins: ["Poppins", "sans-serif"],
+            },
+            colors: {
+              dea: "#bada55",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <section class="mb-96 mx-auto max-w-3xl pt-4">
+      <h1 class="mb-2 font-poppins text-4xl font-semibold">Belajar Typography Bersama Tailwind CSS</h1>
+      <div class="mb-4 text-lg text-neutral-500">By <a class="text-gray-700"> DAG </a>, 17 Juli 2022</div>
+      <p class="mb-4 bg-dea">
+        Lorem, ipsum dolor sit amet <a href="#" class="underline font-semibold">consectetur</a> adipisicing elit. Aspernatur perspiciatis, officiis aperiam recusandae dolorum repudiandae dicta dolor harum doloremque, illo minus modi est.
+        Nisi ab praesentium illo. Quidem, dolor incidunt.
+      </p>
+      <blockquote class="mb-4 italic font-thin text-xl">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis, officiis aperiam recusandae dolorum repudiandae dicta dolor harum doloremque, illo minus modi est. Nisi ab praesentium illo. Quidem, dolor incidunt.
+      </blockquote>
+      <p class="mb-4">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis, officiis aperiam recusandae dolorum repudiandae dicta dolor harum doloremque, illo minus modi est. Nisi ab praesentium illo. Quidem, dolor incidunt.
+      </p>
+    </section>
+  </body>
+</html>
